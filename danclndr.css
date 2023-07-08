@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #f8675a 45%, #b224d6 60%, #285aeb 90%);
+}
+
+.calender {
+  background-color: black;
+  color: aliceblue;
+  width: 450px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.month {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(20, 103, 109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.month h1 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Oleo Script', cursive;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month p {
+  font-size: 15px;
+}
+
+.weekdays {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: aliceblue;
+  color: rgb(20, 103, 109);
+}
+
+.weekdays div {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dates {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+.dates div {
+  font-size: 14px;
+  margin: 3px;
+  width: 57.5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dates div:hover:not(.empty) {
+  border: 2px solid aliceblue;
+}
+
+.today {
+  background-color: rgb(20, 103, 109);;
+}
